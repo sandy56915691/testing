@@ -24,6 +24,6 @@ public class Test_Case003 extends BaseClass{
 			lap.logOut();
 		else
 			Assert.assertNull(lap);
-		Thread.sleep(2000);
+		Thread.sleep(2000);//commit
 	}
 }
