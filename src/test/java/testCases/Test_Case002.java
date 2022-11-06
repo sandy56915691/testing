@@ -15,6 +15,6 @@ public class Test_Case002 extends BaseClass{
 		WebDriver driver = PageDriver.getDriverInstance().getDriver();
 		MainPage mp = new MainPage(driver);
 		mp.login_method();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 	}
 }
