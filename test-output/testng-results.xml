@@ -1,17 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-06T22:50:57 IST" name="Default suite" finished-at="2022-11-06T22:50:57 IST" duration-ms="198">
+  <suite started-at="2022-11-19T22:40:10 IST" name="Suite" finished-at="2022-11-19T22:42:00 IST" duration-ms="109780">
     <groups>
     </groups>
-    <test started-at="2022-11-06T22:50:57 IST" name="Default test" finished-at="2022-11-06T22:50:57 IST" duration-ms="198">
-      <class name="randomPackage.RandomClass">
-        <test-method signature="m1()[pri:0, instance:randomPackage.RandomClass@689604d9]" started-at="2022-11-06T22:50:57 IST" name="m1" finished-at="2022-11-06T22:50:57 IST" duration-ms="50" status="PASS">
+    <test started-at="2022-11-19T22:40:10 IST" name="Test" finished-at="2022-11-19T22:42:00 IST" duration-ms="109780">
+      <class name="testCases.Test_Case007">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case007@34e9fd99]" started-at="2022-11-19T22:41:37 IST" name="before" finished-at="2022-11-19T22:41:43 IST" duration-ms="6115" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- randomPackage.RandomClass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- before -->
+        <test-method signature="test7()[pri:0, instance:testCases.Test_Case007@34e9fd99]" started-at="2022-11-19T22:41:43 IST" name="test7" finished-at="2022-11-19T22:41:49 IST" duration-ms="6282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case007@34e9fd99]" started-at="2022-11-19T22:41:49 IST" name="after" finished-at="2022-11-19T22:41:49 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case007 -->
+      <class name="testCases.Test_Case006">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case006@45752059]" started-at="2022-11-19T22:41:24 IST" name="before" finished-at="2022-11-19T22:41:29 IST" duration-ms="5329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test6()[pri:0, instance:testCases.Test_Case006@45752059]" started-at="2022-11-19T22:41:29 IST" name="test6" finished-at="2022-11-19T22:41:36 IST" duration-ms="7039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case006@45752059]" started-at="2022-11-19T22:41:36 IST" name="after" finished-at="2022-11-19T22:41:37 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case006 -->
+      <class name="testCases.Test_Case005">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case005@36ebc363]" started-at="2022-11-19T22:41:12 IST" name="before" finished-at="2022-11-19T22:41:17 IST" duration-ms="5803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test5()[pri:0, instance:testCases.Test_Case005@36ebc363]" started-at="2022-11-19T22:41:17 IST" name="test5" finished-at="2022-11-19T22:41:24 IST" duration-ms="6289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case005@36ebc363]" started-at="2022-11-19T22:41:24 IST" name="after" finished-at="2022-11-19T22:41:24 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case005 -->
+      <class name="testCases.Test_Case004">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case004@22555ebf]" started-at="2022-11-19T22:41:00 IST" name="before" finished-at="2022-11-19T22:41:06 IST" duration-ms="5747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test4()[pri:0, instance:testCases.Test_Case004@22555ebf]" started-at="2022-11-19T22:41:06 IST" name="test4" finished-at="2022-11-19T22:41:11 IST" duration-ms="5681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case004@22555ebf]" started-at="2022-11-19T22:41:11 IST" name="after" finished-at="2022-11-19T22:41:12 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case004 -->
+      <class name="testCases.Test_Case003">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case003@292b08d6]" started-at="2022-11-19T22:40:39 IST" name="before" finished-at="2022-11-19T22:40:45 IST" duration-ms="5307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test3(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.Test_Case003@292b08d6]" started-at="2022-11-19T22:40:45 IST" name="test3" data-provider="login_data" finished-at="2022-11-19T22:40:50 IST" duration-ms="5717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sandy5691@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Garg25@$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test3(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.Test_Case003@292b08d6]" started-at="2022-11-19T22:40:50 IST" name="test3" data-provider="login_data" finished-at="2022-11-19T22:40:55 IST" duration-ms="4510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sandy5691@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Garg26@$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[negative]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test3(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.Test_Case003@292b08d6]" started-at="2022-11-19T22:40:55 IST" name="test3" data-provider="login_data" finished-at="2022-11-19T22:41:00 IST" duration-ms="4685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sandy76@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Garg25@$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[negative]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case003@292b08d6]" started-at="2022-11-19T22:41:00 IST" name="after" finished-at="2022-11-19T22:41:00 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case003 -->
+      <class name="testCases.Test_Case002">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case002@1d296da]" started-at="2022-11-19T22:40:11 IST" name="before" finished-at="2022-11-19T22:40:33 IST" duration-ms="22513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test2()[pri:0, instance:testCases.Test_Case002@1d296da]" started-at="2022-11-19T22:40:33 IST" name="test2" finished-at="2022-11-19T22:40:39 IST" duration-ms="5338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case002@1d296da]" started-at="2022-11-19T22:40:39 IST" name="after" finished-at="2022-11-19T22:40:39 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case002 -->
+      <class name="testCases.Test_Case008">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case008@3c41ed1d]" started-at="2022-11-19T22:41:49 IST" name="before" finished-at="2022-11-19T22:41:55 IST" duration-ms="5335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="test8()[pri:0, instance:testCases.Test_Case008@3c41ed1d]" started-at="2022-11-19T22:41:55 IST" name="test8" finished-at="2022-11-19T22:42:00 IST" duration-ms="5529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case008@3c41ed1d]" started-at="2022-11-19T22:42:00 IST" name="after" finished-at="2022-11-19T22:42:00 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- testCases.Test_Case008 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
