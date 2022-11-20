@@ -10,6 +10,9 @@
       <class name="testCases.Test_Case006"/>
       <class name="testCases.Test_Case007"/>
       <class name="testCases.Test_Case008"/>
+      <class name="testCases.Test_Case009"/>
+      <class name="testCases.Test_Case010"/>
+      <class name="testCases.Test_Case011"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

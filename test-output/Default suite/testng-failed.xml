@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="randomPackage.RandomClass">
+      <class name="testCases.Test_Case010">
         <methods>
-          <include name="m1"/>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="currency_dropdown" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- randomPackage.RandomClass -->
+      </class> <!-- testCases.Test_Case010 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

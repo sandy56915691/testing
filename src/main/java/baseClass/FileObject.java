@@ -4,7 +4,7 @@ import java.util.Properties;
 
 public class FileObject {
 
-	private static final ThreadLocal<Properties> property = new ThreadLocal<>();
+	private static final ThreadLocal<Properties> property = new ThreadLocal<Properties>();
 
 	public static Properties getPropertyInstance() {
 		return property.get();
