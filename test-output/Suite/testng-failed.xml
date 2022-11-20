@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" data-provider-thread-count="3" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="methods" name="Test(failed)">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="testCases.Test_Case003">
+      <class name="testCases.Test_Case012">
         <methods>
-          <include name="test3" invocation-numbers="0 2 1"/>
           <include name="after"/>
+          <include name="check_sort_by_filter" invocation-numbers="1"/>
           <include name="before"/>
         </methods>
-      </class> <!-- testCases.Test_Case003 -->
+      </class> <!-- testCases.Test_Case012 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
