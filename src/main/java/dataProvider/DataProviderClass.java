@@ -1,8 +1,15 @@
 package dataProvider;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class DataProviderClass {
+import baseClass.BaseClass;
+
+public class DataProviderClass extends BaseClass {
 
 	@DataProvider(name = "login_data")
 	public Object[][] dataSupplier(){
@@ -33,4 +40,25 @@ public class DataProviderClass {
 		Object[] arr = {"phone","laptop","apple","macbook"};
 		return arr;
 	}
+	
+	@DataProvider(name = "shipping_data")
+	public Object[][] dataSupplier5() throws IOException{
+		
+		
+		file = new File(System.getProperty("user.dir")+"/src/test/resources/data/data.xlsx");
+		fis = new FileInputStream(file);
+		workBook = new XSSFWorkbook(fis);
+		sheet = workBook.getSheet("shipping");
+		int row = sheet.getLastRowNum();
+		int col = sheet.getRow(0).getLastCellNum();
+		Object[][] arr = new Object[row][col];
+		for(int i=1; i<=row;i++) {
+			for(int j=0; j<col; j++) {
+				arr[i-1][j]=sheet.getRow(i).getCell(j).toString();
+			}
+		}
+		return arr;
+	}
 }
+
+

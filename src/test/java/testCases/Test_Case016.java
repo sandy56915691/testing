@@ -11,20 +11,30 @@ import PageClass.ShoppingCartPage;
 import baseClass.BaseClass;
 import baseClass.FileObject;
 import baseClass.PageDriver;
+import dataProvider.DataProviderClass;
 
 public class Test_Case016 extends BaseClass {
 	
-	@Test()
-	public void estimate_shipping_and_tax_test() throws IOException, InterruptedException {
-		
+	MainPage mp;
+	LoginPage lp;
+	LandingPage lap;
+	ShoppingCartPage scp;
+	
+	@Test(priority = -1)
+	public void preSteps() {
 		driver = PageDriver.getDriverInstance().getDriver();
-		MainPage mp = new MainPage(driver);
-		LoginPage lp = mp.login_method();
-		LandingPage lap = lp.login_method(FileObject.getPropertyInstance().getProperty("username"),
+		mp = new MainPage(driver);
+		lp = mp.login_method();
+		lap = lp.login_method(FileObject.getPropertyInstance().getProperty("username"),
 				FileObject.getPropertyInstance().getProperty("password"), "positive");
-		ShoppingCartPage scp = lap.viewCart();
-		scp.estimateShippingAndTaxes("India", "Haryana", "131001");
-		lap.logOut();
+		scp = lap.viewCart();
+	}
+	
+	@Test(dataProviderClass = DataProviderClass.class, dataProvider = "shipping_data")
+	public void estimate_shipping_and_tax_test(String country, String region, String pincode) throws IOException, InterruptedException {
+		
+		scp.estimateShippingAndTaxes(country, region, pincode);
+		//lap.logOut();
 		//Assert.assertFalse(result);		
 		
 	}

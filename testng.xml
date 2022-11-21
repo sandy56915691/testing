@@ -15,6 +15,9 @@
       <class name="testCases.Test_Case011"/>
       <class name="testCases.Test_Case012"/>
       <class name="testCases.Test_Case013"/>
+      <class name="testCases.Test_Case014"/>
+      <class name="testCases.Test_Case015"/>
+      <class name="testCases.Test_Case016"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

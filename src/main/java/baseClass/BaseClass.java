@@ -7,6 +7,8 @@ import java.time.Duration;
 import java.util.Objects;
 import java.util.Properties;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -20,6 +22,8 @@ public class BaseClass {
 	public File file;
 	public FileInputStream fis;
 	public Properties prop;
+	public XSSFWorkbook workBook;
+	public XSSFSheet sheet;
 
 	@BeforeClass
 	public void before() throws IOException {

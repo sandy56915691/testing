@@ -204,8 +204,10 @@ public class LandingPage {
 			return false;
 	}
 	
-	public ProductPage search_product(String product) {
+	public ProductPage search_product(String product) throws InterruptedException {
 		
+		search_box.clear();
+		Thread.sleep(200);
 		search_box.sendKeys(product);
 		search_btn.click();
 		return new ProductPage(PageDriver.getDriverInstance().getDriver());
