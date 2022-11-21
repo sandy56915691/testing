@@ -5,7 +5,7 @@
     <classes>
       <class name="testCases.Test_Case016">
         <methods>
-          <include name="estimate_shipping_and_tax_test"/>
+          <include name="estimate_shipping_and_tax_test" invocation-numbers="0 1"/>
           <include name="after"/>
           <include name="before"/>
         </methods>

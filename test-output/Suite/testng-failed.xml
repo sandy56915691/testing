@@ -3,13 +3,13 @@
 <suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="1" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="testCases.Test_Case012">
+      <class name="testCases.Test_Case014">
         <methods>
+          <include name="check_total"/>
           <include name="after"/>
-          <include name="check_sort_by_filter" invocation-numbers="1"/>
           <include name="before"/>
         </methods>
-      </class> <!-- testCases.Test_Case012 -->
+      </class> <!-- testCases.Test_Case014 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
