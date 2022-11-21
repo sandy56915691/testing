@@ -27,7 +27,7 @@ public class DataProviderClass {
 		return arr;
 	}
 	
-	@DataProvider(name = "search_data")
+	@DataProvider(name = "search_data", indices = {0,3})
 	public Object[] dataSupplier4(){
 
 		Object[] arr = {"phone","laptop","apple","macbook"};

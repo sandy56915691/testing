@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import baseClass.PageDriver;
+
 public class ProductPage {
 
 	@FindBy(xpath = "//div[@id='content']/h1")
@@ -32,6 +34,9 @@ public class ProductPage {
 
 	@FindBy(xpath = "(//table[@class='table table-bordered']//tr/td)[2]")
 	WebElement sub_total;
+	
+	@FindBy(xpath = "//span[text()='Checkout']")
+	WebElement checkOut;
 
 	@FindBy(xpath = "(//table[@class='table table-bordered']//tr[2]/td)[2]")
 	WebElement total;
@@ -80,6 +85,16 @@ public class ProductPage {
 		float total_amount = Float.parseFloat(total.getText().replaceAll("[^0-9.]", ""));
 		if(sum==subTotal && sum==total_amount)
 			return true;
+		else
+			return false;
+	}
+	
+	public Object checkout() {
+		cart_button.click();
+		if(cart_items_price_list.size()!=0) {
+			checkOut.click();
+			return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
+		}
 		else
 			return false;
 	}

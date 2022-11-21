@@ -59,6 +59,15 @@ public class LandingPage {
 
 	@FindBy(xpath = "//div[@class='caption']//a")
 	List<WebElement> products_name_list;
+	
+	@FindBy(xpath = "//span[@id='cart-total']/..")
+	WebElement cart_button;
+	
+	@FindBy(xpath = "//strong[text()=' View Cart']")
+	WebElement view_cart_button;
+	
+	@FindBy(xpath = "//span[text()='Checkout']")
+	WebElement checkOut;
 
 	@FindBy(xpath = "//footer")
 	WebElement footer;
@@ -200,6 +209,18 @@ public class LandingPage {
 		search_box.sendKeys(product);
 		search_btn.click();
 		return new ProductPage(PageDriver.getDriverInstance().getDriver());
+	}
+	
+	public ShoppingCartPage checkOut() {
+		cart_button.click();
+		checkOut.click();
+		return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
+	}
+	
+	public ShoppingCartPage viewCart() {
+		cart_button.click();
+		view_cart_button.click();
+		return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
 	}
 
 	public int brokenLinks() throws IOException {
