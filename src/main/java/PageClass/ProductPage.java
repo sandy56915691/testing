@@ -22,6 +22,15 @@ public class ProductPage {
 
 	@FindBy(xpath = "//span[@class='hidden-xs hidden-sm hidden-md' and text()='Add to Cart']")
 	List<WebElement> add_to_cart_list;
+	
+	@FindBy(xpath = "//button[@data-original-title='Add to Wish List']")
+	List<WebElement> add_to_wish_list;
+	
+	@FindBy(xpath = "//button[@data-original-title='Compare this Product']")
+	List<WebElement> add_to_compare_list;
+	
+	@FindBy(xpath = "//a[text()='product comparison']")
+	WebElement product_comparison;
 
 	@FindBy(xpath = "//span[@id='cart-total']")
 	WebElement cart_total;
@@ -51,11 +60,11 @@ public class ProductPage {
 
 		if(search_text.getText().contains(str) && search_box.getAttribute("value").contains(str) && search_result.size()>=1) {
 
-			System.out.println("Product Found Successfully");
+			System.out.println(str+" Found Successfully");
 			return true;
 		}
 		else {
-			System.out.println("Product Not Found");
+			System.out.println(str+" Not Found");
 			return false;
 		}
 	}
@@ -70,6 +79,36 @@ public class ProductPage {
 		}
 		else
 			System.out.println(product+" are not available");
+	}
+	
+	public void add_to_wish_list(String product) throws InterruptedException {
+		if(add_to_wish_list.size()!=0) {
+			for(WebElement element : add_to_wish_list) {
+				element.click();
+				Thread.sleep(1000);
+			}
+
+		}
+		else
+			System.out.println(product+" are not available");
+	}
+	
+	public void add_to_comparison_list(String product) throws InterruptedException {
+		if(add_to_compare_list.size()!=0) {
+			for(WebElement element : add_to_compare_list) {
+				element.click();
+				Thread.sleep(1000);
+			}
+
+		}
+		else
+			System.out.println(product+" are not available");
+	}
+	
+	public ProductComparisonPage product_comparison_navigation() {
+		
+		product_comparison.click();
+		return new ProductComparisonPage(PageDriver.getDriverInstance().getDriver());
 	}
 
 	public boolean check_total() throws InterruptedException {

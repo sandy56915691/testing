@@ -3,6 +3,7 @@ package testCases;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import PageClass.LandingPage;
@@ -20,7 +21,7 @@ public class Test_Case013 extends BaseClass {
 	LoginPage lp;
 	LandingPage lap;
 	
-	@Test(priority = -1)
+	@BeforeClass
 	public void preSteps() {
 		driver = PageDriver.getDriverInstance().getDriver();
 		mp = new MainPage(driver);

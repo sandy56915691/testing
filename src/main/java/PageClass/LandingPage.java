@@ -29,6 +29,9 @@ public class LandingPage {
 
 	@FindBy(xpath="//span[text()='My Account']")
 	WebElement my_Account_btn;
+	
+	@FindBy(xpath="//span[contains(text(),'Wish List')]")
+	WebElement wishlist_btn;
 
 	@FindBy(xpath="(//*[text()='Logout'])[1]")
 	WebElement logout;
@@ -223,6 +226,11 @@ public class LandingPage {
 		cart_button.click();
 		view_cart_button.click();
 		return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
+	}
+	
+	public WishListPage viewWishList() {
+		wishlist_btn.click();
+		return new WishListPage(PageDriver.getDriverInstance().getDriver());
 	}
 
 	public int brokenLinks() throws IOException {

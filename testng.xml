@@ -18,6 +18,12 @@
       <class name="testCases.Test_Case014"/>
       <class name="testCases.Test_Case015"/>
       <class name="testCases.Test_Case016"/>
+      <class name="testCases.Test_Case017"/>
+      <class name="testCases.Test_Case018"/>
+	  <class name="testCases.Test_Case019"/>      
+      <class name="testCases.Test_Case020"/>
+      <class name="testCases.Test_Case021"/>
+      <class name="testCases.Test_Case022"/>      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

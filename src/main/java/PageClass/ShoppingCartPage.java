@@ -98,6 +98,7 @@ public class ShoppingCartPage {
 			for(@SuppressWarnings("unused") WebElement ele : star_products_cross_button) {
 				
 				star_products_cross_button_single.click();
+				Thread.sleep(1000);
 			}
 			System.out.println("Products deleted successfully");
 		}
