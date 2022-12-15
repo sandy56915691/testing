@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import baseClass.PageDriver;
 import utility.UtilityClass;
 
 public class ShoppingCartPage {
@@ -160,5 +161,10 @@ public class ShoppingCartPage {
 			flag=false;
 		}
 		return flag;
+	}
+	
+	public CheckOutPage checkout_navigation() {
+		checkout_button.click();
+		return new CheckOutPage(PageDriver.getDriverInstance().getDriver());
 	}
 }

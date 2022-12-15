@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-11T20:19:31 IST" name="Default suite" finished-at="2022-12-11T20:19:50 IST" duration-ms="19597">
+  <suite started-at="2022-12-14T23:36:46 IST" name="Default suite" finished-at="2022-12-14T23:37:49 IST" duration-ms="62965">
     <groups>
     </groups>
-    <test started-at="2022-12-11T20:19:31 IST" name="Default test" finished-at="2022-12-11T20:19:50 IST" duration-ms="19597">
-      <class name="testCases.Test_Case014">
-        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case014@6b2ea799]" started-at="2022-12-11T20:19:31 IST" name="before" finished-at="2022-12-11T20:19:42 IST" duration-ms="10743" status="PASS">
+    <test started-at="2022-12-14T23:36:46 IST" name="Default test" finished-at="2022-12-14T23:37:49 IST" duration-ms="62965">
+      <class name="testCases.Test_Case024">
+        <test-method is-config="true" signature="before()[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:36:46 IST" name="before" finished-at="2022-12-14T23:36:57 IST" duration-ms="10918" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="check_total()[pri:0, instance:testCases.Test_Case014@6b2ea799]" started-at="2022-12-11T20:19:42 IST" name="check_total" finished-at="2022-12-11T20:19:50 IST" duration-ms="8481" status="PASS">
+        <test-method is-config="true" signature="preSteps()[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:36:57 IST" name="preSteps" finished-at="2022-12-14T23:37:00 IST" duration-ms="2783" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_total -->
-        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case014@6b2ea799]" started-at="2022-12-11T20:19:50 IST" name="after" finished-at="2022-12-11T20:19:50 IST" duration-ms="159" status="PASS">
+        </test-method> <!-- preSteps -->
+        <test-method signature="add_to_cart(java.lang.String)[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:37:00 IST" name="add_to_cart" data-provider="search_data" finished-at="2022-12-14T23:37:02 IST" duration-ms="2718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_to_cart -->
+        <test-method signature="add_to_cart(java.lang.String)[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:37:02 IST" name="add_to_cart" data-provider="search_data" finished-at="2022-12-14T23:37:07 IST" duration-ms="5136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macbook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_to_cart -->
+        <test-method signature="order_confirmation()[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:37:07 IST" name="order_confirmation" finished-at="2022-12-14T23:37:48 IST" duration-ms="40960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order_confirmation -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testCases.Test_Case024@45752059]" started-at="2022-12-14T23:37:48 IST" name="after" finished-at="2022-12-14T23:37:49 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- testCases.Test_Case014 -->
+      </class> <!-- testCases.Test_Case024 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -37,6 +37,9 @@ public class ProductPage {
 
 	@FindBy(xpath = "//span[@id='cart-total']/..")
 	WebElement cart_button;
+	
+	@FindBy(xpath = "//span[text()='Shopping Cart']/..")
+	WebElement shopping_cart_button;
 
 	@FindBy(xpath = "//table[@class='table table-striped']/tbody/tr/td[4]")
 	List<WebElement> cart_items_price_list;
@@ -79,6 +82,11 @@ public class ProductPage {
 		}
 		else
 			System.out.println(product+" are not available");
+	}
+	
+	public ShoppingCartPage shopping_cart_navigation() {
+		shopping_cart_button.click();
+		return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
 	}
 	
 	public void add_to_wish_list(String product) throws InterruptedException {

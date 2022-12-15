@@ -30,6 +30,9 @@ public class LandingPage {
 	@FindBy(xpath="//span[text()='My Account']")
 	WebElement my_Account_btn;
 	
+	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']//a[text()='Order History']")
+	WebElement order_history_dropdown;
+	
 	@FindBy(xpath="//span[contains(text(),'Wish List')]")
 	WebElement wishlist_btn;
 
@@ -71,6 +74,9 @@ public class LandingPage {
 	
 	@FindBy(xpath = "//span[text()='Checkout']")
 	WebElement checkOut;
+	
+	@FindBy(xpath = "//span[text()='Shopping Cart']/..")
+	WebElement shopping_cart_button;
 
 	@FindBy(xpath = "//footer")
 	WebElement footer;
@@ -216,6 +222,11 @@ public class LandingPage {
 		return new ProductPage(PageDriver.getDriverInstance().getDriver());
 	}
 	
+	public ShoppingCartPage shopping_cart_navigation() {
+		shopping_cart_button.click();
+		return new ShoppingCartPage(PageDriver.getDriverInstance().getDriver());
+	}
+	
 	public ShoppingCartPage checkOut() {
 		cart_button.click();
 		checkOut.click();
@@ -231,6 +242,12 @@ public class LandingPage {
 	public WishListPage viewWishList() {
 		wishlist_btn.click();
 		return new WishListPage(PageDriver.getDriverInstance().getDriver());
+	}
+	
+	public OrderHistoryPage viewOrderHistory() {
+		my_Account_btn.click();
+		order_history_dropdown.click();
+		return new OrderHistoryPage(PageDriver.getDriverInstance().getDriver());
 	}
 
 	public int brokenLinks() throws IOException {

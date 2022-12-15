@@ -23,7 +23,11 @@
 	  <class name="testCases.Test_Case019"/>      
       <class name="testCases.Test_Case020"/>
       <class name="testCases.Test_Case021"/>
-      <class name="testCases.Test_Case022"/>      
+      <class name="testCases.Test_Case022"/>
+      <class name="testCases.Test_Case023"/>
+      <class name="testCases.Test_Case024"/>
+      <class name="testCases.Test_Case025"/>
+      <class name="testCases.Test_Case026"/>      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
